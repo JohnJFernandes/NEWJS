@@ -1,10 +1,11 @@
 function full_Sentence()  {
-    var part_1 ="1 cup flour";
+    var part_1 ='1 cup flour';
     var part_2 ="1 cup ground oats";
     var part_3 ="1 cup brown sugar";
     var part_4 ="1 stick of butter";
     var part_5 ="3 cups of favorite fruit"
-    document.getElementById("Concatenate").innerHTML = whole_
+    var text1=part_1.concat(part_2, part_3,part_4,part_5);
+    document.getElementById("Concatenate").innerHTML = text1;
 }
 function slice_Method()  {
     var Sentence = "All day everyday HUSTLE till I get paid";
@@ -25,11 +26,12 @@ function string_Method()  {
 }
 function precision_Method()  {
     var Z =2111.3014546546573541354;
-    document.getElementById("Precision").innerHTML = X.toPrecision(8);
+    document.getElementById("Precision").innerHTML = Z.toPrecision(10);
 }
 let text1 = "Berry wonderful";
 let result = text.valueOf();
 document.getElementById("berry").innerHTML = result;
+
 let num = 5.541456;
 let n = num.toFixed();
 document.getElementById("yum").innerHTML = n;
