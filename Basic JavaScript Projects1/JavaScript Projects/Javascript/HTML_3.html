@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Laugh now, cry later</title>
+</head>
+<body>
+    <h1>Characters</h1>
+    <h3>Click on a TV show to see a character</h3>
+    <p id="displayType"></p>
+    <button onclick="type(character)">Pick me</button>
+    <ul>
+        <li onclick="displayType(this)" id="Fox"
+            data-character-type="Homer">Fox</li>
+        <li onclick="displayType(this)" id="NBC"
+            data-character-type="Michael Scott">NBC</li>
+        <li onclick="displayType(this)" id="MTV"
+            data-character-type="Rob Dyrdek">MTV</li>
+        <li onclick="displayType(this)" id="HBO"
+            data-character-type="Tony Soprano">HBO</li> 
+    </ul>
+    <script src="JavaScript_3.js"></script>
+</body>
+</html>

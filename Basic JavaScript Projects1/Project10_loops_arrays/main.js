@@ -29,13 +29,12 @@ function array_Function()  {
 }
 let text = "One in a million";
 let length = text.length;
-document.getElementById().innerHTML = length;
+document.getElementById("Constant").innerHTML = length;
 
 function constant_function()  {
-    firstName: "UserFirstName",
-    lastName: "UserLastName"
+    firstName: "UserFirstName";
+    lastName: "UserLastName";
 };
-
 var x = 50;
 document.write(X);
 {
@@ -44,13 +43,13 @@ document.write(X);
 }
 document.write("<br>" + X);
 
-function myFunction(name)  {
+function Call_Loop(name)  {
     return "Hello " + name;
 }
-
+document.getElementById("Loop").innerHTML ="I believe";
 let text1="Animal";
 for (let i = 0; i < 9; i++)  {
     if (i === 3) { continue; }
     text += "The number is " + i + "<br>";
 }
-document.getElementById(keep).innerHTML = text;
+document.getElementById("keep").innerHTML = text;
