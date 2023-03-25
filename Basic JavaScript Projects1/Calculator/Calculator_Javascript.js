@@ -32,7 +32,7 @@ function Input_Decimal(dot)  {
 function Handle_Operator(Next_Operator) {
     const {First_Operand, Display_Value, operator} = Calculator;
     const Value_of_Input = parseFloat(Display_Value);
-    if (opeartor && Calculator.Wait_Second_Operand)  {
+    if (Operator && Calculator.Wait_Second_Operand)  {
         Calculator.operator = Next_Operator;
         return;
     }

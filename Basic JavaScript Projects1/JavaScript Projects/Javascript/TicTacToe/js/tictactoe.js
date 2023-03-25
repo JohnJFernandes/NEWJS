@@ -8,7 +8,7 @@ function placeXOrO(squareNumber)  {
         if (activePlayer === 'X')  {
             select.style.backgroundImage = 'url("images/bluelex.jpg")';
         } else {
-            select.style.backgroungImage =- 'url("images/redimp.jpg")';
+            select.style.backgroundImage = 'url("images/redimp.jpg")';
         }
         selectedSquares.push(squareNumber + activePlayer);
         checkWinConditions();
