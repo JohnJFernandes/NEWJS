@@ -16,14 +16,14 @@ input  {
     border: 0;
     padding-left: 50%;
 }
-    UI  {
-        border: 2 2 2 2;
-        border-color: brown;
-        font-display: center;
-    }
-    input:focus {
-        outline: none;
-    }
+    
+input:focus {
+outline: none;
+}
+.UI  {
+    border: 1px red solid;
+    font-display: center;
+}
 
 li  {
     text-align: left;
@@ -32,16 +32,14 @@ li  {
     margin: 0;
 }
 
-UI  {
-    border: 2 2 2 2;
-    border-color: brown;
-    font-display: center;
-}
-
 footer  {
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     width: 644px;
     height: 20px;
     margin: 0 auto;
+}
+
+.removetask  {
+    padding-bottom: 5px;
 }

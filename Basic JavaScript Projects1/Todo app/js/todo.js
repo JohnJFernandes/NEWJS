@@ -22,14 +22,14 @@ function add()  {
     /*this converts the  task input to a JSON string*/
     localStorage.setItem('todo', JSON.stringify(todos));
     document.getElementById("task").value = "";
-    SharedWorker();
+    show();
 
     return false;
 }
 
 function show()  {
     /* this sets the task that was retrieved as a variable*/
-    var tools = get_todos();
+    var todos = get_todos();
 
     /*This sets up each task as a n unordered list*/
     var html = '<ul>';
@@ -37,16 +37,26 @@ function show()  {
     for (var i =0; i < todos.length; i++)  {
     /*this also display the task as a list and creates the button with the "x"*/
     html += '<li>' + todos[i] + '<button class ="remove" id="' + i + '">x</button></li>';
-
-    };
     html += '</ul>';
     /*This displays the task as a list*/
     document.getElementById('todos').innerHTML = html;
+    var buttons = document.getElementsByClassName('remove');
+    for (var i = 0; i < buttons.length; i++)  {
+        buttons[i].addEventListener('click', remove);
+    };
 
 }
-/*This displays the inputed taks when the 'Addd Item' button is clicked*/
+/*This displays the inputed taks when the 'Add Item' button is clicked*/
 document.getElementById('add').addEventListener('click', add);
 /*this will keep the inputs displayed permantaly on the screen*/
 show();
+    
+function removetask() {
+    var id = this.getAttribute('id');
+    var todos =get_todos();
+    todos.splice(id,1);
+    localStorage.setItem('todo', JSON.stringify(todos));
+    show();
 
-function 
+    return false;
+};
